@@ -1,16 +1,19 @@
 package com.example.SpringBootApplication.model;
 
 
-import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import javax.persistence.*;
+
 /**
  * Table representing a product.
  */
+@Data
 @Entity
-@Table(name = "product")
+@Table(name = "products")
 @Getter
 @Setter
 @ToString
